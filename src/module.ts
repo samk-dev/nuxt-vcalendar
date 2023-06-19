@@ -67,6 +67,9 @@ export default defineNuxtModule<ModuleOptions>({
 
     addPlugin(resolver.resolve('./runtime/plugin.client'))
 
+    nuxtOptions.build.transpile ||= []
+    nuxtOptions.build.transpile.push('vcalendar')
+
     if (moduleOptions.defaultCss) {
       nuxtOptions.css ||= []
       nuxtOptions.css.push(`v-calendar/style.css`)
