@@ -40,6 +40,39 @@ export default defineNuxtConfig({
 
 That's it! You can now use Nuxt VCalendar in your Nuxt app ✨
 
+## Usage Example
+
+**VCalendar does not work on ssr it should be wrapped with `<ClientOnly />`. If you have `ssr: false` it can be used without `<ClientOnly />`** _see [issue on vcalendar repository](https://github.com/nathanreyes/v-calendar/issues/823)_
+
+```html
+<script setup lang="ts">
+  import { ref } from '#imports'
+  const date = ref(new Date())
+
+  const attrs = ref([
+    {
+      key: 'today',
+      highlight: {
+        color: 'green',
+        fillMode: 'solid'
+      },
+      dates: new Date()
+    }
+  ])
+</script>
+
+<template>
+  <div>
+    <client-only>
+      <h2>Calendar</h2>
+      <VCalendar v-model="date" />
+      <h2>Date Picker</h2>
+      <VDatePicker v-model="date" :attributes="attrs" />
+    </client-only>
+  </div>
+</template>
+```
+
 ## Module Options
 
 ```ts
