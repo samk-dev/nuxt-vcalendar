@@ -80,26 +80,26 @@ export interface ModuleOptions {
 
 ```bash
 # Install dependencies
-pnpm install
+npm install
 
 # Generate type stubs
-pnpm run dev:prepare
+npm run dev:prepare
 
 # Develop with the playground
-pnpm run dev
+npm run dev
 
 # Build the playground
-pnpm run dev:build
+npm run dev:build
 
 # Run ESLint
-pnpm run lint
+npm run lint
 
 # Run Vitest
-pnpm run test
-pnpm run test:watch
+npm run test
+npm run test:watch
 
 # Release new version
-pnpm run release
+npm run release
 ```
 
 <!-- Badges -->

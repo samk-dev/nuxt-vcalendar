@@ -18,9 +18,9 @@ const attrs = ref([
   <div>
     <client-only>
       <h2>Calendar</h2>
-      <GCalendar v-model="date" :attributes="attrs" />
+      <VCalendar v-model="date" />
       <h2>Date Picker</h2>
-      <GDatePicker v-model="date" :attributes="attrs" />
+      <VDatePicker v-model="date" :attributes="attrs" />
     </client-only>
   </div>
 </template>
