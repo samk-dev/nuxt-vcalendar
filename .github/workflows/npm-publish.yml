@@ -1,0 +1,28 @@
+name: NPM Publish
+on:
+  release:
+    types:
+      - created
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 18.x
+          registry-url: https://registry.npmjs.org
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Prepare module
+        run: npm run dev:prepare
+
+      - name: Build
+        run: npm --filter run prepack
+
+      - name: Publish
+        run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
