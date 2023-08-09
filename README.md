@@ -42,8 +42,6 @@ That's it! You can now use Nuxt VCalendar in your Nuxt app ✨
 
 ## Usage Example
 
-**VCalendar does not work on ssr it should be wrapped with `<ClientOnly />`. If you have `ssr: false` it can be used without `<ClientOnly />`** _see [issue on vcalendar repository](https://github.com/nathanreyes/v-calendar/issues/823)_
-
 ```html
 <script setup lang="ts">
   import { ref } from '#imports'

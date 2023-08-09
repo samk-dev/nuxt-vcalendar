@@ -1,8 +1,4 @@
 {
   "root": true,
-  "extends": ["@nuxtjs/eslint-config-typescript", "prettier"],
-  "plugins": ["prettier"],
-  "rules": {
-    "vue/max-attributes-per-line": 0
-  }
+  "extends": ["@samk-dev/eslint-config"]
 }
