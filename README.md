@@ -133,6 +133,8 @@ npm run test:watch
 npm run release
 ```
 
+![Alt](https://repobeats.axiom.co/api/embed/33e6456563229344406c4f0ce45eba84c5a85c26.svg "Repobeats analytics image")
+
 <!-- Badges -->
 
 [npm-version-src]: https://img.shields.io/npm/v/@samk-dev/nuxt-vcalendar/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
