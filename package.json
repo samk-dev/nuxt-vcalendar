@@ -1,6 +1,6 @@
 {
   "name": "@samk-dev/nuxt-vcalendar",
-  "version": "1.0.0-dev",
+  "version": "1.0.0",
   "description": "Integrates V Calendar in Nuxt",
   "repository": "samk-dev/nuxt-vcalendar",
   "license": "MIT",
