@@ -1,6 +1,6 @@
 {
   "name": "@samk-dev/nuxt-vcalendar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Integrates V Calendar in Nuxt",
   "repository": "samk-dev/nuxt-vcalendar",
   "license": "MIT",
@@ -32,7 +32,7 @@
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground",
-    "release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
+    "release": "npm run lint && npm run test && npm run prepack && changelogen --release && git push --follow-tags",
     "lint": "eslint .",
     "format": "prettier --write \"**/*.{ts,tsx,vue,json}\"",
     "prepare": "husky install",
