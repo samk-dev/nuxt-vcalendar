@@ -42,7 +42,7 @@
   "dependencies": {
     "@nuxt/kit": "^3.6.5",
     "@popperjs/core": "^2.11.8",
-    "v-calendar": "^3.0.3"
+    "v-calendar": "^3.1.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.7.2",
@@ -56,7 +56,7 @@
     "changelogen": "^0.5.5",
     "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
-    "nuxt": "^3.6.5",
+    "nuxt": "^3.7.4",
     "vitest": "^0.31.4"
   },
   "overrides": {
