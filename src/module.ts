@@ -34,7 +34,7 @@ export interface ModuleOptions {
   calendarOptions?: Defaults
   /**
    * @description auto import v-calendar components
-   * @default []
+   * @default '{ DatePicker: true, Calendar: true }'
    */
   autoImports: VCalendarComponents
 }
@@ -65,10 +65,11 @@ export default defineNuxtModule<ModuleOptions>({
     nuxtOptions.runtimeConfig.public.vcalendar ||= {}
     nuxtOptions.runtimeConfig.public.vcalendar = moduleOptions.calendarOptions
 
-    addPlugin(resolver.resolve('./runtime/plugin.client'))
-
     nuxtOptions.build.transpile ||= []
     nuxtOptions.build.transpile.push('vcalendar')
+    nuxtOptions.build.transpile.push('@popperjs/core')
+
+    addPlugin(resolver.resolve('runtime/plugin.client'))
 
     if (moduleOptions.defaultCss) {
       nuxtOptions.css ||= []
