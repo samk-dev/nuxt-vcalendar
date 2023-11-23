@@ -40,6 +40,10 @@ export default defineNuxtConfig({
 
 That's it! You can now use Nuxt VCalendar in your Nuxt app ✨
 
+## Stackblitz example
+
+[https://stackblitz.com/edit/nuxt-starter-2zwgab?file=app.vue](https://stackblitz.com/edit/nuxt-starter-2zwgab?file=app.vue)
+
 ## Usage Example
 
 ```html
@@ -133,7 +137,7 @@ npm run test:watch
 npm run release
 ```
 
-![Alt](https://repobeats.axiom.co/api/embed/33e6456563229344406c4f0ce45eba84c5a85c26.svg "Repobeats analytics image")
+![Alt](https://repobeats.axiom.co/api/embed/33e6456563229344406c4f0ce45eba84c5a85c26.svg 'Repobeats analytics image')
 
 <!-- Badges -->
 
