@@ -1,15 +1,39 @@
-import type { Defaults } from 'v-calendar/src/utils/defaults'
 import {
   defineNuxtModule,
   addPlugin,
   createResolver,
   addComponent
 } from '@nuxt/kit'
+import type { DarkModeConfig } from 'vue-screen-utils'
 import { name, version } from '../package.json'
 
 export type VCalendarComponents = {
   DatePicker: boolean
   Calendar: boolean
+}
+// workaround until to figure out why the type is not resolving from
+// import type {Defaults} from 'vcalendar/dist/types/src/utils/defaults'
+interface DatePickerPopoverDefaults {
+  visibility?: string
+  placement?: string
+  isInteractive?: boolean
+}
+interface DatePickerDefaults {
+  updateOnInput?: boolean
+  inputDebounce?: number
+  popover?: DatePickerPopoverDefaults
+}
+export interface Defaults {
+  componentPrefix?: string
+  color?: string
+  isDark?: DarkModeConfig
+  navVisibility?: string
+  titlePosition?: string
+  transition?: string
+  touch?: object
+  masks?: object
+  locales?: any
+  datePicker?: DatePickerDefaults
 }
 export interface ModuleOptions {
   /**
