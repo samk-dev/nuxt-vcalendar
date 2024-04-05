@@ -35,27 +35,28 @@
     "release": "npm run lint && npm run test && npm run prepack && changelogen --release && git push --follow-tags",
     "lint": "eslint .",
     "format": "prettier --write \"**/*.{ts,tsx,vue,json}\"",
-    "prepare": "husky install",
+    "prepare": "husky",
     "test": "vitest run",
-    "test:watch": "vitest watch"
+    "test:watch": "vitest watch",
+    "update:deps": "npx npm-check-updates --interactive --format group"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.6.5",
+    "@nuxt/kit": "^3.11.2",
     "@popperjs/core": "^2.11.8",
     "v-calendar": "^3.1.2"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.7.2",
-    "@commitlint/config-conventional": "^17.7.0",
-    "@nuxt/module-builder": "^0.5.4",
-    "@nuxt/schema": "^3.6.5",
-    "@samk-dev/eslint-config": "^1.0.5",
-    "@samk-dev/prettier-config": "^1.0.3",
-    "@types/node": "^18.18.3",
+    "@commitlint/cli": "^19.2.1",
+    "@commitlint/config-conventional": "^19.1.0",
+    "@nuxt/module-builder": "^0.5.5",
+    "@nuxt/schema": "^3.11.2",
+    "@samk-dev/eslint-config": "^1.0.6",
+    "@samk-dev/prettier-config": "^1.0.4",
+    "@types/node": "^20.12.4",
     "changelogen": "^0.5.5",
-    "husky": "^8.0.3",
-    "lint-staged": "^14.0.1",
-    "nuxt": "^3.8.2"
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "nuxt": "^3.11.2"
   },
   "overrides": {
     "vue": "latest"
