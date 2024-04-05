@@ -4,7 +4,6 @@ import {
   createResolver,
   addComponent
 } from '@nuxt/kit'
-import type { DarkModeConfig } from 'vue-screen-utils'
 import { name, version } from '../package.json'
 
 export type VCalendarComponents = {
@@ -12,7 +11,14 @@ export type VCalendarComponents = {
   Calendar: boolean
 }
 // workaround until to figure out why the type is not resolving from
-// import type {Defaults} from 'vcalendar/dist/types/src/utils/defaults'
+// Error 01: import type {Defaults} from 'vcalendar/dist/types/src/utils/defaults'
+// Error 02: ERROR  Unexpected token (4:8) in /Users/terminal-sss/Desktop/Developer/libraries/nuxt-vcalendar/node_modules/vue-screen-utils/dist/index.d.ts
+
+interface DarkModeClassConfig {
+  selector: string
+  darkClass: string
+}
+type DarkModeConfig = boolean | 'system' | Partial<DarkModeClassConfig>
 interface DatePickerPopoverDefaults {
   visibility?: string
   placement?: string
