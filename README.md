@@ -20,7 +20,24 @@ Integrates V Calendar in Nuxt
 1. Add `@samk-dev/nuxt-vcalendar` dependency to your project
 
 ```bash
-npx nuxi@latest module add vcalendar
+npx nuxi@latest module add @samk-dev/nuxt-vcalendar
+```
+
+That's it! You can now use Nuxt VCalendar in your Nuxt app ✨
+
+## Manual Installation
+
+1. Add @samk-dev/nuxt-vcalendar dependency to your project
+
+```bash
+# Using pnpm
+pnpm add -D @samk-dev/nuxt-vcalendar
+
+# Using yarn
+yarn add --dev @samk-dev/nuxt-vcalendar
+
+# Using npm
+npm install --save-dev @samk-dev/nuxt-vcalendar
 ```
 
 2. Add `@samk-dev/nuxt-vcalendar` to the `modules` section of `nuxt.config.ts`
@@ -30,8 +47,6 @@ export default defineNuxtConfig({
   modules: ['@samk-dev/nuxt-vcalendar']
 })
 ```
-
-That's it! You can now use Nuxt VCalendar in your Nuxt app ✨
 
 ## Stackblitz example
 
