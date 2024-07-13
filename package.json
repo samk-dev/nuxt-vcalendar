@@ -48,7 +48,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
-    "@nuxt/module-builder": "^0.5.5",
+    "@nuxt/module-builder": "^0.8.1",
     "@nuxt/schema": "^3.12.3",
     "@samk-dev/eslint-config": "^1.0.6",
     "@samk-dev/prettier-config": "^1.0.4",
