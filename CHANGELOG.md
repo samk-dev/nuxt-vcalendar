@@ -1,5 +1,22 @@
 # Changelog
 
+## v1.0.4
+
+[compare changes](https://github.com/samk-dev/nuxt-vcalendar/compare/v1.0.3...v1.0.4)
+
+### 🏡 Chore
+
+- Indicate compatibility with new v4 major ([015e741](https://github.com/samk-dev/nuxt-vcalendar/commit/015e741))
+- Deps update ([ca257c4](https://github.com/samk-dev/nuxt-vcalendar/commit/ca257c4))
+- Deps update ([b88c4c5](https://github.com/samk-dev/nuxt-vcalendar/commit/b88c4c5))
+- Resolve conflict ([b3cfe9e](https://github.com/samk-dev/nuxt-vcalendar/commit/b3cfe9e))
+- Readded package-lock.json ([2baf4f2](https://github.com/samk-dev/nuxt-vcalendar/commit/2baf4f2))
+
+### ❤️ Contributors
+
+- Samk-dev ([@samk-dev](http://github.com/samk-dev))
+- Daniel Roe ([@danielroe](http://github.com/danielroe))
+
 ## v1.0.3
 
 [compare changes](https://github.com/samk-dev/nuxt-vcalendar/compare/v1.0.2...v1.0.3)
