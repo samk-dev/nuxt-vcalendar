@@ -1,6 +1,6 @@
 {
   "name": "@samk-dev/nuxt-vcalendar",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Integrates V Calendar in Nuxt",
   "repository": "samk-dev/nuxt-vcalendar",
   "license": "MIT",
@@ -41,7 +41,7 @@
     "update:deps": "npx npm-check-updates --interactive --format group"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.12.3",
+    "@nuxt/kit": "^3.12.4",
     "@popperjs/core": "^2.11.8",
     "v-calendar": "^3.1.2"
   },
@@ -49,14 +49,14 @@
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
     "@nuxt/module-builder": "^0.8.1",
-    "@nuxt/schema": "^3.12.3",
+    "@nuxt/schema": "^3.12.4",
     "@samk-dev/eslint-config": "^1.0.6",
     "@samk-dev/prettier-config": "^1.0.4",
     "@types/node": "^20.14.10",
     "changelogen": "^0.5.5",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.7",
-    "nuxt": "^3.12.3"
+    "nuxt": "^3.12.4"
   },
   "overrides": {
     "vue": "latest"
