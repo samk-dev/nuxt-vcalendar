@@ -76,7 +76,7 @@ export default defineNuxtModule<ModuleOptions>({
     configKey: 'vcalendar',
     compatibility: {
       bridge: false,
-      nuxt: '^3.0.0'
+      nuxt: '>=3.0.0'
     }
   },
   defaults: {
